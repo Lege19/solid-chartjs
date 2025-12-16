@@ -53,7 +53,7 @@ export interface ChartProps {
      */
     ref?: Ref<HTMLCanvasElement | null>
     /**
-     * Extra props to be forwarded directly to the canvas
+     * Extra attributes to be forwarded directly to the canvas
      *
      * For example for setting the `id`, `role`, or `aria-label`.
      *
@@ -61,5 +61,5 @@ export interface ChartProps {
      * which can be set directly.
      * @default {}
      */
-    extraCanvasProps?: Omit<JSX.CanvasHTMLAttributes<HTMLCanvasElement>, 'width' | 'height'>
+    extraCanvasAttributes?: Omit<JSX.CanvasHTMLAttributes<HTMLCanvasElement>, 'width' | 'height'>
 }

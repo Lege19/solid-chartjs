@@ -113,7 +113,7 @@ export default function DefaultChart(props: ChartProps) {
             ref={mergeRefs(props.ref, (el) => setCanvasRef(el))}
             height={merged.height}
             width={merged.width}
-            {...merged.extraCanvasProps}>
+            {...merged.extraCanvasAttributes}>
             {merged.fallback}
         </canvas>
     )
