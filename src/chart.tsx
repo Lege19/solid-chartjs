@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-non-null-assertion */
 import { mergeRefs } from '@solid-primitives/refs'
 import { Chart, ChartData, ChartItem, ChartOptions, Plugin } from 'chart.js'
 import { createEffect, mergeProps, on, onCleanup, onMount, createSignal } from 'solid-js'
@@ -29,7 +28,7 @@ export default function DefaultChart(props: ChartProps) {
             //* remove the RadialLinearScale from the chart's scales
             if (config.options.scales?.r) {
                 console.debug('[Solid-ChartJS]: Removing un-needed RadialLinearScale')
-                delete config.options.scales?.r
+                delete config.options.scales.r
             }
         }
 
